@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./src/oo_index.js"></script>
+  <script src="./src/taskList.js"></script>
+  <script src="./src/task.js"></script>
 </head>
 <body>
   <div id="main-content">
@@ -13,17 +16,17 @@
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
       <input type="submit" value="Create New Task">
+      <input type="reset" value="Reset">
     </form>
 
     <div id="list">
       <h2>My Todos</h2>
       <ul id="tasks">
+
       </ul>
     </div>
 
-    <script src="./src/oo_index.js"></script>
-    <script src="./src/taskList.js"></script>
-    <script src="./src/task.js"></script>
+
   </div>
 
 </body>
