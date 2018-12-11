@@ -57,12 +57,15 @@ button {
 
 #tasks li.low {
   border: 2px solid green;
+  background-color: rgba(200,255,200, .5)
 }
 
 #tasks li.medium {
   border: 2px solid yellow;
+  background-color: rgba(255,255,200, .7)
 }
 
 #tasks li.high {
   border: 2px solid red;
+  background-color: rgba(255,200,200, .5)
 }
