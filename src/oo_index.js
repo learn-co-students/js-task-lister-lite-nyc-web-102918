@@ -1,4 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  const taskList = new TaskList();
+  const task = document.querySelector(‘#new-task-description’)
+  task.addEventListener('click', function (event) {
+
 });
