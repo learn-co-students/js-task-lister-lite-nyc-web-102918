@@ -28,10 +28,44 @@ button {
 }
 
 #list {
-  margin: 10px;
+  width: 500px;
+  margin: 10px auto;
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+}
+
+#tasks {
+  list-style: none;
+  padding-left: 0;
+  margin: 25px;
+}
+
+
+#tasks li button {
+  float: right;
+  font-size: 12px;
+}
+
+#tasks li {
+  margin: 10px;
+  padding: 10px;
+  white-space: normal;
+}
+
+#tasks li.low {
+  border: 2px solid green;
+  background-color: rgba(200,255,200, .5)
+}
+
+#tasks li.medium {
+  border: 2px solid yellow;
+  background-color: rgba(255,255,200, .7)
+}
+
+#tasks li.high {
+  border: 2px solid red;
+  background-color: rgba(255,200,200, .5)
 }
