@@ -25,12 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const deleteButton = document.createElement('button')
+    deleteButton.innerText = 'X'
     deleteButton.addEventListener('click', function(event) {
       newLiTag.remove()
     })
 
-    deleteButton.innerText = 'X'
     newLiTag.appendChild(deleteButton)
     task.appendChild(newLiTag)
   })
+
 });
