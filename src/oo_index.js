@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
   red.value = "red"
   red.innerHTML = "red"
   dropdown.appendChild(red)
-  let green = document.createElement('option');
-  green.value = "green"
-  green.innerHTML = "green"
-  dropdown.appendChild(green)
   let yellow = document.createElement('option');
   yellow.value = "yellow"
   yellow.innerHTML= "yellow"
   dropdown.appendChild(yellow)
+  let green = document.createElement('option');
+  green.value = "green"
+  green.innerHTML = "green"
+  dropdown.appendChild(green)
 
 
 
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //added a dropdown section and added color
     i = dropdown.options.selectedIndex
     color = dropdown.options[i].textContent
+    li.id = i
     li.style.color = color
 
     // Added a remove button 
@@ -52,6 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // append the list item on the ul
     ul.appendChild(li)
     li.appendChild(button)
+
+    //sort the tasks
+
+    let sorted= [...ul.querySelectorAll('li')]
+    sorted = sorted.sort((a,b) => parseInt(a.id) - parseInt(b.id))
+    console.log(sorted[0])
+    // for (let i = 0; i < sorted.length; i++){
+    //     ul.children[i].replaceWith(sorted[i])
+    // }
   });
 
   //choose color
